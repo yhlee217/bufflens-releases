@@ -40,3 +40,26 @@
 ## 이 앱이 하는 것
 
 게임 화면을 **읽기만** 합니다 — 게임 메모리를 읽거나, 게임에 키 · 마우스 입력을 보내거나, 패킷을 보지 않습니다.
+
+## 라이선스
+
+BuffLens의 소스 코드는 공개하지 않습니다. 설치 파일에는 아래 오픈 소스 구성 요소와 그 라이선스 원문이 함께 들어 있습니다.
+경로는 설치 폴더 기준입니다(portable은 실행할 때 푸는 폴더).
+
+**알림 목소리 모델에는 사용 제한이 있습니다.** 목소리 모델 Supertonic 3(Supertone)은 **OpenRAIL-M** 라이선스를 따릅니다.
+라이선스 끝의 Attachment A(Use Restrictions)는 이 모델을 법을 어기는 일, 미성년자를 해치는 일, 남을 해치려고 거짓 정보를 만들거나 퍼뜨리는 일,
+남을 동의 없이 사칭하는 일, 괴롭히거나 차별하는 일, 기계가 만든 것임을 밝히지 않고 퍼뜨리는 일 등에 쓰지 못하게 합니다.
+이 제한은 BuffLens로 알림 목소리를 쓸 때도, BuffLens를 다른 사람에게 다시 나눠 줄 때도 그대로 따라갑니다 — 원문은 `resources/licenses/Supertonic-3-OpenRAIL-M.txt`.
+
+| 구성 요소 | 라이선스 | 원문 |
+|---|---|---|
+| 알림 목소리 모델 Supertonic 3 — sherpa-onnx용 int8 판([csukuangfj2/sherpa-onnx-supertonic-3-tts-int8-2026-05-11](https://huggingface.co/csukuangfj2/sherpa-onnx-supertonic-3-tts-int8-2026-05-11)) | OpenRAIL-M (Supertonic 코드는 MIT) | `resources/licenses/Supertonic-3-OpenRAIL-M.txt` · `Supertonic-MIT.txt` |
+| 목소리 엔진 sherpa-onnx 1.13.8 | Apache License 2.0 | `resources/licenses/sherpa-onnx-Apache-2.0.txt` |
+| sherpa-onnx DLL 안에 함께 든 espeak-ng 등 | espeak-ng은 GPL-3.0 이상 (BuffLens는 espeak-ng을 부르지 않습니다) | `resources/licenses/sherpa-onnx-THIRD-PARTY.txt`(그 판의 소스 위치) · `GPL-3.0.txt` |
+| ONNX Runtime | MIT | `resources/licenses/onnxruntime-MIT.txt` |
+| 글자 인식 tesseract.js · tesseract.js-core | Apache License 2.0 | `resources/app/node_modules/tesseract.js/LICENSE.md` · `resources/app/node_modules/tesseract.js-core/LICENSE` |
+| 글자 인식 언어 자료 kor · eng (npm `@tesseract.js-data`) | MIT (패키지 표기) | 패키지에 원문 파일이 없습니다 |
+| 화면 라이브러리 React · React DOM | MIT | 앱 코드(`resources/app/out/renderer/assets/`) 안의 `@license React` 머리글 |
+| 글꼴 Pretendard | SIL Open Font License 1.1 | `resources/licenses/Pretendard-OFL.txt` |
+| 아이콘 Tabler Icons | MIT | `resources/licenses/Tabler-Icons-MIT.txt` |
+| Electron · Chromium | MIT · Chromium 구성 요소마다의 라이선스 | 설치 폴더 맨 위의 `LICENSE.electron.txt` · `LICENSES.chromium.html` |
